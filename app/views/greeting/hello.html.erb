@@ -1,8 +1,23 @@
-<h2> Hello I am <%= @owner %>, and welcome! </h2>
+<!DOCTYPE html>
+<html>
+  <head><link rel="fluid-icon" href="https://github.com/fluidicon.png" >
+    <title>Pangyue</title>
 
-<p>
-<%= link_to image_tag('fb_icon.png', height: '30', width: '30', hspace: '5'), 'https://www.facebook.com/profile.php?id=100005028880107' %>
-<%= link_to image_tag('gg_icon.png', height: '30', width: '30', hspace: '5'), 'https://www.google.com/' %>
-<%= link_to image_tag('linkedin_icon.png', height: '30', width: '30', hspace: '5'), 'https://www.linkedin.com/in/yue-janice-zheng/' %>
-</p>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <h2> Hello I am <%= @owner %>, and welcome! </h2>
+
+	<%= link_to image_tag('fb_icon.png',class:'contact-icon'), 'https://www.facebook.com/profile.php?id=100005028880107'  %>
+	<%= link_to image_tag('gg_icon.png', class:'contact-icon'), 'https://www.google.com/' %>
+	<%= link_to image_tag('linkedin_icon.png', class:'contact-icon'), 'https://www.linkedin.com/in/yue-janice-zheng/' %>
+
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
+
 
