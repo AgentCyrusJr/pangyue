@@ -1,23 +1,28 @@
-<!DOCTYPE html>
-<html>
-  <head><link rel="fluid-icon" href="https://github.com/fluidicon.png" >
-    <title>Pangyue</title>
+<h2> Hello I am <%= @owner %>, and welcome! </h2>
 
-    <%= csrf_meta_tags %>
+<ul>
+	<li class='active'><%= link_to 'Who I am', 'https://www.google.com' %></li>
+	<li><%= link_to 'What I like', root_path %></li>
+	<li><%= link_to 'How I feel', root_path %></li>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <h2> Hello I am <%= @owner %>, and welcome! </h2>
+</ul>
 
-	<%= link_to image_tag('fb_icon.png',class:'contact-icon'), 'https://www.facebook.com/profile.php?id=100005028880107'  %>
-	<%= link_to image_tag('gg_icon.png', class:'contact-icon'), 'https://www.google.com/' %>
-	<%= link_to image_tag('linkedin_icon.png', class:'contact-icon'), 'https://www.linkedin.com/in/yue-janice-zheng/' %>
+<div style="margin-left: 138px;padding: 1px 16px;height:800px;margin-top: 2px;">
+  <h3>Pang Yue</h3>
+  <h4>RF Engineer @Amazon Lab126 </h4>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+</div>
 
-  </head>
-
-  <body>
-    <%= yield %>
-  </body>
-</html>
+<center>
+<%= link_to image_tag('fb_icon.png',class:'contact-icon'), 'https://www.facebook.com/profile.php?id=100005028880107'  %>
+<%= link_to image_tag('linkedin_icon.png', class:'contact-icon'), 'https://www.linkedin.com/in/yue-janice-zheng/' %>
+<%= link_to image_tag('github_icon.png', class:'contact-icon'), 'https://github.com/AgentCyrusJr' %>
+</center>
 
 
