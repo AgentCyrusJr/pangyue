@@ -1,13 +1,13 @@
 <h2> Hello I am <%= @owner %>, and welcome! </h2>
 
-<ul>
-	<li class='active'><%= link_to 'Who I am', 'https://www.google.com' %></li>
-	<li><%= link_to 'What I like', root_path %></li>
-	<li><%= link_to 'How I feel', root_path %></li>
+<ul class='main-page'>
+	<li class='main-page active'><%= link_to 'Who I am', 'https://www.google.com' %></li>
+	<li class='main-page'><%= link_to 'What I like', root_path %></li>
+	<li class='main-page'><%= link_to 'How I feel', microposts_path %></li>
 
 </ul>
 
-<div style="margin-left: 138px;padding: 1px 16px;height:800px;margin-top: 2px;">
+<div class='main-page'>
   <h3>Pang Yue</h3>
   <h4>RF Engineer @Amazon Lab126 </h4>
   <p>Some text..</p>
@@ -19,10 +19,8 @@
   <p>Some text..</p>
 </div>
 
-<center>
+<center class='main-page'>
 <%= link_to image_tag('fb_icon.png',class:'contact-icon'), 'https://www.facebook.com/profile.php?id=100005028880107'  %>
 <%= link_to image_tag('linkedin_icon.png', class:'contact-icon'), 'https://www.linkedin.com/in/yue-janice-zheng/' %>
 <%= link_to image_tag('github_icon.png', class:'contact-icon'), 'https://github.com/AgentCyrusJr' %>
 </center>
-
-

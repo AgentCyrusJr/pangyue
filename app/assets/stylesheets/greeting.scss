@@ -12,13 +12,17 @@ html {
 }
 */
 
-div {
+div.main-page {
 	background-image: asset-data-url('background_image1.jpeg');
 	//background-color: lightblue;
 	background-size:100% 100%;
+  margin-left: 138px;
+  padding: 1px 16px;
+  height:800px;
+  margin-top: 2px;
 }
 
-h2 {
+h2.main-page {
 	margin-top: 10px;
 	margin-bottom: 10px;
 	text-align: center;
@@ -32,7 +36,7 @@ h2 {
 }
 
 
-ul {
+ul.main-page {
     list-style-type: none;
     padding: 0;
     width: 130px;
@@ -42,7 +46,7 @@ ul {
     margin-top: 0px;
 }
 
-li {
+li.main-page {
     display: block;
     color: #000;
     padding: 10px 10px;
@@ -50,12 +54,17 @@ li {
     text-align: center;
 }
 
-li.active {
+
+li.main-page active {
+    display: block;
+    padding: 10px 10px;
+    text-decoration: none;
+    text-align: center;
     background-color: #0abab5;
     color: white;
 }
 
-li:hover:not(.active) {
+li:hover:not(.main-page active) {
     background-color: #555;
     color: white;
 }
