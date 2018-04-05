@@ -12,29 +12,18 @@ html {
 }
 */
 
-div.main-page {
+div.card-body {
 	background-image: asset-data-url('background_image1.jpeg');
 	//background-color: lightblue;
 	background-size:100% 100%;
-  margin-left: 138px;
-  padding: 1px 16px;
   height:800px;
-  margin-top: 2px;
 }
-
+/*
 h2.main-page {
 	margin-top: 10px;
 	margin-bottom: 10px;
 	text-align: center;
 }
-
-
-.contact-icon {
-	max-height: 30px;
-	max-width: 100px;
-	margin-right: 5px;
-}
-
 
 ul.main-page {
     list-style-type: none;
@@ -67,4 +56,10 @@ li.main-page active {
 li:hover:not(.main-page active) {
     background-color: #555;
     color: white;
+}
+*/
+.contact-icon {
+  max-height: 30px;
+  max-width: 100px;
+  margin-right: 5px;
 }
